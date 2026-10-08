@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Northstar is a polished local demo page for Browser Developer Agent picker and visual-edit smoke tests."
+    />
+    <title>Northstar — Build with clarity</title>
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header id="site-header" class="site-header" data-testid="site-header">
+      <div class="page-shell header-inner">
+        <a id="brand-link" class="brand" href="#hero" aria-label="Northstar home" data-testid="brand-link">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" role="img">
+              <path d="M16 2.5 19.6 12 29.5 16l-9.9 4L16 29.5 12.4 20 2.5 16l9.9-4L16 2.5Z" />
+              <circle cx="16" cy="16" r="3.2" />
+            </svg>
+          </span>
+          <span>Northstar</span>
+        </a>
+
+        <button
+          id="menu-toggle"
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+          aria-label="Open navigation"
+          data-testid="menu-toggle"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav id="primary-navigation" class="primary-navigation" aria-label="Primary navigation" data-testid="primary-navigation">
+          <a id="nav-features" href="#features">Features</a>
+          <a id="nav-workflow" href="#workflow">Workflow</a>
+          <a id="nav-stories" href="#stories">Stories</a>
+          <a id="nav-contact" class="nav-cta" href="#early-access">Join the waitlist</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section id="hero" class="hero section" data-testid="hero">
+        <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+        <div class="page-shell hero-grid">
+          <div class="hero-copy" data-testid="hero-copy">
+            <p id="hero-eyebrow" class="eyebrow" data-testid="hero-eyebrow">
+              <span class="eyebrow-dot" aria-hidden="true"></span>
+              Thoughtful work, beautifully aligned
+            </p>
+            <h1 id="hero-title" data-testid="hero-title">
+              Turn bold ideas into
+              <span class="headline-accent">clear momentum.</span>
+            </h1>
+            <p id="hero-description" class="hero-description" data-testid="hero-description">
+              Northstar brings plans, conversations, and decisions into one calm workspace—so your team can move
+              from “what if?” to “what’s next?” without losing the thread.
+            </p>
+            <div id="hero-actions" class="button-row" data-testid="hero-actions">
+              <a id="hero-primary-cta" class="button button-primary" href="#early-access" data-testid="hero-primary-cta">
+                Start exploring
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7.5 4 6 6-6 6" /></svg>
+              </a>
+              <a id="hero-secondary-cta" class="button button-secondary" href="#workflow" data-testid="hero-secondary-cta">
+                See how it works
+              </a>
+            </div>
+            <div id="hero-proof" class="hero-proof" data-testid="hero-proof">
+              <div class="avatar-stack" aria-hidden="true">
+                <span class="avatar avatar-one">MJ</span>
+                <span class="avatar avatar-two">AO</span>
+                <span class="avatar avatar-three">SK</span>
+              </div>
+              <p><strong>2,400+ builders</strong><br />already finding their focus</p>
+            </div>
+          </div>
+
+          <div id="product-preview" class="product-preview" data-testid="product-preview" aria-label="Northstar product preview">
+            <div class="preview-window">
+              <div class="preview-chrome" aria-hidden="true">
+                <span></span><span></span><span></span>
+                <p>northstar / launch-plan</p>
+              </div>
+              <div class="preview-body">
+                <aside class="preview-sidebar" aria-hidden="true">
+                  <div class="mini-logo">N</div>
+                  <span class="side-dot side-dot-active"></span>
+                  <span class="side-dot"></span>
+                  <span class="side-dot"></span>
+                  <span class="side-dot"></span>
+                </aside>
+                <div class="preview-content">
+                  <div class="preview-heading">
+                    <div>
+                      <span class="mini-kicker">Launch week</span>
+                      <h2>Make the moment count</h2>
+                    </div>
+                    <span class="status-pill"><span></span> On track</span>
+                  </div>
+                  <div class="metric-grid">
+                    <article id="preview-metric-progress" class="metric-card metric-featured" data-testid="preview-metric-progress">
+                      <p>Overall progress</p>
+                      <strong>78%</strong>
+                      <div class="progress-track"><span></span></div>
+                    </article>
+                    <article id="preview-metric-tasks" class="metric-card" data-testid="preview-metric-tasks">
+                      <p>Tasks cleared</p>
+                      <strong>24 <small>/ 31</small></strong>
+                      <div class="tiny-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+                    </article>
+                  </div>
+                  <div class="timeline-card">
+                    <div class="timeline-top"><span>This week</span><span>Aug 26–30</span></div>
+                    <div class="timeline-row"><span class="timeline-avatar amber">AR</span><p>Final campaign review</p><time>Tue</time></div>
+                    <div class="timeline-row"><span class="timeline-avatar mint">KM</span><p>Partner handoff</p><time>Wed</time></div>
+                    <div class="timeline-row"><span class="timeline-avatar violet">JL</span><p>Launch readiness check</p><time>Fri</time></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="floating-note" class="floating-note" data-testid="floating-note">
+              <span class="floating-icon" aria-hidden="true">✓</span>
+              <div><strong>Decision captured</strong><p>Everyone stays in sync</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="trust-strip" class="trust-strip" aria-label="Customer logos" data-testid="trust-strip">
+        <div class="page-shell trust-content">
+          <p>Trusted by focused teams at</p>
+          <div class="logo-row" aria-hidden="true">
+            <span><i class="logo-shape logo-orbit"></i>Orbit</span>
+            <span><i class="logo-shape logo-tandem"></i>Tandem</span>
+            <span><i class="logo-shape logo-canopy"></i>Canopy</span>
+            <span><i class="logo-shape logo-lumen"></i>Lumen</span>
+            <span><i class="logo-shape logo-kin"></i>Kinship</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features section" data-testid="features-section">
+        <div class="page-shell">
+          <div class="section-heading" data-testid="features-heading">
+            <p class="eyebrow eyebrow-centered">Designed for forward motion</p>
+            <h2 id="features-title">Everything your best work needs.<br /><span>Nothing it doesn’t.</span></h2>
+            <p>Give every project a shared center of gravity, from the first spark to the final detail.</p>
+          </div>
+          <div id="feature-card-grid" class="feature-card-grid" data-testid="feature-card-grid">
+            <article id="feature-card-clarity" class="feature-card feature-card-coral" data-testid="feature-card-clarity">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h11M4 18h7" /></svg>
+              </div>
+              <h3>Clarity at a glance</h3>
+              <p>See the priorities, owners, and next moves that matter—without digging through tabs.</p>
+              <a href="#workflow" aria-label="Learn about clarity at a glance">Explore the view <span>→</span></a>
+            </article>
+            <article id="feature-card-alignment" class="feature-card feature-card-mint" data-testid="feature-card-alignment">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" /><path d="m8.5 12 2.3 2.3 4.9-5" /></svg>
+              </div>
+              <h3>Alignment that lasts</h3>
+              <p>Capture decisions beside the work so context survives every handoff and time zone.</p>
+              <a href="#workflow" aria-label="Learn about alignment that lasts">Keep context close <span>→</span></a>
+            </article>
+            <article id="feature-card-rhythm" class="feature-card feature-card-violet" data-testid="feature-card-rhythm">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 17V9m5 8V5m5 12v-6m5 6V7" /></svg>
+              </div>
+              <h3>A rhythm that fits</h3>
+              <p>Shape simple rituals for planning, feedback, and delivery—then make them yours.</p>
+              <a href="#workflow" aria-label="Learn about a rhythm that fits">Build your rhythm <span>→</span></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="workflow" class="workflow section" data-testid="workflow-section">
+        <div class="page-shell workflow-grid">
+          <div id="workflow-visual" class="workflow-visual" data-testid="workflow-visual">
+            <div class="orbit-ring orbit-ring-one" aria-hidden="true"></div>
+            <div class="orbit-ring orbit-ring-two" aria-hidden="true"></div>
+            <div class="focus-card">
+              <span class="focus-label">Today’s focus</span>
+              <h3>Turn customer insight into a sharper launch story</h3>
+              <div class="focus-footer">
+                <div class="focus-people"><span>AR</span><span>KM</span><span>+3</span></div>
+                <span>4 notes linked</span>
+              </div>
+            </div>
+            <div class="orbit-chip orbit-chip-one"><span>01</span> Gather</div>
+            <div class="orbit-chip orbit-chip-two"><span>02</span> Shape</div>
+            <div class="orbit-chip orbit-chip-three"><span>03</span> Share</div>
+          </div>
+          <div class="workflow-copy">
+            <p class="eyebrow">From signal to shared direction</p>
+            <h2 id="workflow-title">Keep the why connected to the work.</h2>
+            <p>Ideas get stronger when the whole story stays visible. Northstar connects what you learned, what you chose, and what happens next.</p>
+            <ol id="workflow-steps" class="workflow-steps" data-testid="workflow-steps">
+              <li id="workflow-step-capture" data-testid="workflow-step-capture">
+                <span>1</span><div><strong>Capture the signal</strong><p>Bring notes, feedback, and opportunities into one meaningful view.</p></div>
+              </li>
+              <li id="workflow-step-decide" data-testid="workflow-step-decide">
+                <span>2</span><div><strong>Make the call</strong><p>Turn discussion into a visible decision with a clear owner.</p></div>
+              </li>
+              <li id="workflow-step-move" data-testid="workflow-step-move">
+                <span>3</span><div><strong>Move together</strong><p>Give everyone the next step and the context to act with confidence.</p></div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section id="stories" class="stories section" data-testid="stories-section">
+        <div class="page-shell story-card">
+          <div class="quote-mark" aria-hidden="true">“</div>
+          <blockquote id="customer-quote" data-testid="customer-quote">
+            Northstar gave us something surprisingly rare: a place where big-picture thinking and daily progress actually belong together.
+          </blockquote>
+          <div class="story-author">
+            <span class="author-avatar" aria-hidden="true">NP</span>
+            <p><strong>Nadia Park</strong><br />VP Product, Canopy</p>
+          </div>
+          <div class="story-stat" data-testid="story-stat">
+            <strong>32%</strong><span>faster from decision to delivery</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="early-access" class="early-access section" data-testid="early-access-section">
+        <div class="page-shell cta-panel" data-testid="cta-panel">
+          <div class="cta-copy">
+            <p class="eyebrow eyebrow-light">Your next chapter starts here</p>
+            <h2 id="cta-title">Make space for work that matters.</h2>
+            <p>Join the early-access list for product updates, thoughtful workflows, and a quieter way to build momentum.</p>
+          </div>
+          <form id="early-access-form" class="early-access-form" data-testid="early-access-form" novalidate>
+            <div class="form-row">
+              <label for="email-input">Work email</label>
+              <div class="input-with-button">
+                <input
+                  id="email-input"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="you@company.com"
+                  required
+                  aria-describedby="form-status"
+                  data-testid="email-input"
+                />
+                <button id="form-submit" type="submit" data-testid="form-submit">Join the waitlist <span aria-hidden="true">→</span></button>
+              </div>
+            </div>
+            <p id="form-status" class="form-status" role="status" aria-live="polite" data-testid="form-status">
+              No spam. Just useful notes, about twice a month.
+            </p>
+          </form>
+          <span class="cta-star cta-star-one" aria-hidden="true">✦</span>
+          <span class="cta-star cta-star-two" aria-hidden="true">✦</span>
+        </div>
+      </section>
+    </main>
+
+    <footer id="site-footer" class="site-footer" data-testid="site-footer">
+      <div class="page-shell footer-inner">
+        <a class="brand brand-footer" href="#hero" aria-label="Northstar home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><path d="M16 2.5 19.6 12 29.5 16l-9.9 4L16 29.5 12.4 20 2.5 16l9.9-4L16 2.5Z" /><circle cx="16" cy="16" r="3.2" /></svg>
+          </span>
+          <span>Northstar</span>
+        </a>
+        <p>Built for people making meaningful things.</p>
+        <div class="footer-links">
+          <a href="#features">Product</a>
+          <a href="#stories">Customers</a>
+          <a href="#early-access">Contact</a>
+        </div>
+        <p class="copyright">© <span id="current-year">2026</span> Northstar Labs</p>
+      </div>
+    </footer>
+  </body>
+</html>

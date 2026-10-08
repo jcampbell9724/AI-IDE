@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="surface" x1="120" y1="80" x2="900" y2="950" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#112b46"/>
+      <stop offset="0.58" stop-color="#091728"/>
+      <stop offset="1" stop-color="#07101d"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="315" y1="260" x2="735" y2="790" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#82f0d1"/>
+      <stop offset="0.52" stop-color="#55d9b7"/>
+      <stop offset="1" stop-color="#4ba7ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+  </defs>
+  <rect x="48" y="48" width="928" height="928" rx="224" fill="url(#surface)"/>
+  <rect x="71" y="71" width="882" height="882" rx="204" fill="none" stroke="#8debd2" stroke-opacity="0.18" stroke-width="10"/>
+  <path d="M274 750 445 278c10-28 30-42 60-42h20c30 0 50 14 60 42l171 472H615l-34-108H449l-34 108H274Zm211-224h60l-30-98-30 98Z" fill="#42cfae" opacity="0.28" filter="url(#shadow)"/>
+  <path d="M274 750 445 278c10-28 30-42 60-42h20c30 0 50 14 60 42l171 472H615l-34-108H449l-34 108H274Zm211-224h60l-30-98-30 98Z" fill="url(#accent)"/>
+  <circle cx="776" cy="252" r="34" fill="#73e9ca"/>
+  <path d="M776 170v164M694 252h164" stroke="#73e9ca" stroke-width="18" stroke-linecap="round" opacity="0.34"/>
+</svg>

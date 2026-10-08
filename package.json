@@ -1,0 +1,21 @@
+{
+  "name": "ai-browser-developer-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.19.0",
+  "scripts": {
+    "dev": "pnpm --parallel --filter @browser-agent/daemon --filter @browser-agent/extension --filter @browser-agent/demo dev",
+    "dev:desktop": "pnpm --filter @browser-agent/shared build && pnpm --filter @browser-agent/daemon build && pnpm --filter @browser-agent/desktop dev",
+    "dev:daemon": "pnpm --filter @browser-agent/daemon dev",
+    "dev:extension": "pnpm --filter @browser-agent/extension dev",
+    "dev:demo": "pnpm --filter @browser-agent/demo dev",
+    "build": "pnpm --filter @browser-agent/shared build && pnpm --filter @browser-agent/daemon build && pnpm --filter @browser-agent/extension build && pnpm --filter @browser-agent/desktop build && pnpm --filter @browser-agent/demo build",
+    "typecheck": "pnpm --filter @browser-agent/shared build && pnpm --filter @browser-agent/daemon build && pnpm -r --if-present typecheck",
+    "test": "pnpm --filter @browser-agent/shared build && pnpm -r --if-present test",
+    "check": "pnpm typecheck && pnpm test && pnpm build",
+    "package:desktop": "pnpm --filter @browser-agent/shared build && pnpm --filter @browser-agent/daemon build && pnpm --filter @browser-agent/desktop dist:win",
+    "update:desktop": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./scripts/ensure-desktop-current.ps1 -ForceBuild",
+    "sync:desktop": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./scripts/ensure-desktop-current.ps1 -SkipBuild"
+  }
+}

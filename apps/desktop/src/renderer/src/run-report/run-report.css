@@ -1,0 +1,22 @@
+.run-report { margin-top: 16px; border-top: 1px solid var(--border); color: var(--text); font-size: 12px; }
+.run-report > summary { padding: 10px 0; cursor: pointer; font-weight: 600; }
+.run-report > summary > span { margin-left: 8px; color: var(--muted); font-weight: 400; }
+.run-report > summary:focus-visible, .run-report select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.run-report-content { min-width: 0; padding-bottom: 8px; }
+.run-report-content > label { display: block; margin-bottom: 4px; }
+.run-report-content > select { width: 100%; min-width: 0; padding: 6px; border: 1px solid var(--border); border-radius: 4px; background: var(--surface); color: var(--text); font: inherit; }
+.run-report-metrics { margin: 12px 0; }
+.run-report-metrics > div { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; padding: 3px 0; }
+.run-report-metrics dt { color: var(--muted); }
+.run-report-metrics dd { margin: 0; overflow-wrap: anywhere; font-variant-numeric: tabular-nums; }
+.run-report-content > p { margin: 8px 0; color: var(--muted); }
+.run-report-content > .run-report-warning, .run-report-warning { color: var(--warning); }
+.run-report-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 12px; }
+.run-report-actions button { padding: 5px 8px; border: 1px solid var(--border); border-radius: 4px; background: var(--surface); cursor: pointer; font-size: 12px; transition: background-color var(--motion-fast) ease, border-color var(--motion-fast) ease; }
+.run-report-actions button:hover { background: var(--surface-raised); }
+.run-report { animation: surface-enter var(--motion-enter) var(--motion-ease); }
+
+@media (prefers-reduced-motion: reduce) {
+  .run-report { animation: none; }
+  .run-report-actions button { transition: none; }
+}
